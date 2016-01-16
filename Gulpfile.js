@@ -18,5 +18,4 @@ gulp.task('watch', function () {
 	gulp.watch(path.styles.src , ['styles']);
 });
 
-
 gulp.task('default', ['styles','watch']);
