@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/muchaweb/newton/issues"
   },
-  "homepage": "https://github.com/muchaweb/newton#readme"
+  "homepage": "https://github.com/muchaweb/newton#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1"
+  }
 }

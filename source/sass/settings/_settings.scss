@@ -1,0 +1,20 @@
+$palettes : (
+	black : (
+		base : rgb(30, 30, 30),
+		mid-light : rgb(56, 56, 56),
+		light : rgb(63, 63, 67)
+	),
+	grey : (
+		base : rgb(172, 177, 180),
+		mid-light: rgb(209, 212, 214),
+		light : rgb(241, 248, 249)
+	),
+
+	red: (
+		base: rgb(213, 77, 77)
+	)
+);
+
+@function palette($palette, $tone: 'base') {
+	@return map-get(map-get($palettes, $palette), $tone);
+}
