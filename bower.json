@@ -1,0 +1,19 @@
+{
+  "name": "newton-theme",
+  "description": "tema para opencart",
+  "main": "index.js",
+  "authors": [
+    "Noe Sanchez"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/muchaweb/newton",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "componet",
+    "test",
+    "tests"
+  ]
+}

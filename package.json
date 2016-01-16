@@ -1,0 +1,19 @@
+{
+  "name": "newton-theme",
+  "version": "1.0.0",
+  "description": "tema para opencart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muchaweb/newton.git"
+  },
+  "author": "Noe Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muchaweb/newton/issues"
+  },
+  "homepage": "https://github.com/muchaweb/newton#readme"
+}
