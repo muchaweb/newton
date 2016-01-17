@@ -1,0 +1,30 @@
+.o-wishlist {
+  &__link {
+    display: block;
+    font-size: 11px;
+    text-decoration: none;
+    padding: 8px 16px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__icon {
+    color: lighten( palette(black), 10% );
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 14px;
+  }
+  &__label {
+    text-transform: uppercase;
+    color: white;
+    span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      text-align: center;
+      line-height: 16px;
+      margin-left: 4px;
+      background-color: palette(red);
+    }
+  }
+}

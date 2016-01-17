@@ -1,0 +1,19 @@
+.o-nav-customer {
+  background-color: palette(black);
+  color: white;
+  text-align: right;
+  &__account,
+  &__wishlist,
+  &__cart {
+    display: inline-block;
+    vertical-align: middle;
+    &:hover {
+      background-color: lighten(palette(black), 1%);
+    }
+  }
+
+  &__wishlist {
+    border-left: 1px solid palette(black, mid-light);
+    border-right: 1px solid palette(black, mid-light);
+  }
+}

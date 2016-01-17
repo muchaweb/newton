@@ -1,0 +1,36 @@
+.o-mini-cart {
+  &__link {
+    display: block;
+    font-size: 11px;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__label {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-transform: uppercase;
+    .fa {
+      color: palette(black, mid-light);
+      margin-right: 4px;
+      font-size: 16px;
+    }
+  }
+  &__count {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    margin-left: 4px;
+    color: white;
+    background-color: palette(red);
+  }
+  &__content {
+    display: none;
+  }
+}

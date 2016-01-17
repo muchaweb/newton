@@ -61,7 +61,13 @@
 						</ul>
 					</li>
 					<li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-					<li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
+					<li>
+						<a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>">
+							<i class="fa fa-shopping-cart"></i>
+								<span class="hidden-xs hidden-sm hidden-md">
+								<?php echo $text_shopping_cart; ?></span>
+							</a>
+					</li>
 					<li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
 				</ul>
 			</div>
@@ -119,9 +125,49 @@
 		<?php } ?>
 
 		<nav id="navigation" role="navigation">
-			<div class="nav-customer">
+			<!-- Oject Nav Customer -->
+			<ul class="u-list-nostyle o-nav-customer">
+				<!-- Account register/login -->
+				<li class="o-nav-customer__account">
+					<div class="o-account">
+						<a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="o-account__link">
+							<span><?php echo $text_account; ?></span>
+						</a>
+						<div class="o-account__content">
+							<ul class="u-list-nostyle">
+								<?php if ($logged) { ?>
+								<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+								<li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
+								<li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
+								<li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+								<li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+								<?php } else { ?>
+								<li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+								<li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
+								<?php } ?>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<!-- Wshlist -->
+				<li class="o-nav-customer__wishlist">
+					<div class="o-wishlist">
+						<a href="<?php echo $wishlist; ?>" id="wishlist-total" class="o-wishlist__link">
+							<span class="o-wishlist__icon">
+								<i class="fa fa-heart"></i>
+							</span>
+							<span class="o-wishlist__label"><?php echo $text_wishlist; ?></span>
+						</a>
+					</div>
+				</li>
+				<!-- Mini cart -->
+				<li class="o-nav-customer__cart">
+					<?php echo $cart; ?>
+				</li>
+			</ul>
 
-			</div>
+
+
 			<div class="nav-site">
 				<div class="nav-site__logo">
 					<?php if ($logo) { ?>
@@ -168,3 +214,11 @@
 				</div>
 			</div>
 		</nav>
+
+		<header class="header-mobile">
+			<div class="header-mobile__toggle"></div>
+			<div class="header-mobile__logo"></div>
+			<div class="c-m-mini-cart">
+
+			</div>
+		</header>

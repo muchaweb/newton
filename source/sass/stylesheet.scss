@@ -5,9 +5,4 @@
 @import "objects/objects";
 @import "components/components";
 
-a {
-	color: palette(black);
-	&:hover {
-		color: palette(black, mid-light);
-	}
-}
+
